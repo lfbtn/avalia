@@ -99,14 +99,11 @@
           <table class="table table-striped">
             <thead>
 			<th>
-			Questão
+				Questão
             </th>
             </thead>
             <tbody>
-            <tr>
-            <td></td>
-            </tr>
-            <c:forEach items="${avaliacao.perguntas}" var="pergunta">
+            <c:forEach items="${perguntas}" var="pergunta">
             	<tr>
             		<td>${pergunta.pergunta}</td>
       			</tr>
@@ -117,45 +114,7 @@
         <!-- /.col -->
       </div>
       <!-- /.row -->
-      
-      
-      
-      
-            <div class="row">
-        <div class="col-xs-12 table-responsive">
-          <table>
-          <thead>
-			<tr>
-				<th>Id</th>
-				<th>Pergunta teste</th>
-			</tr>
-			</thead>
-			<tbody>
-				<c:forEach items="${avaliacao.perguntas}" var="pergunta">
-								<tr>
-									<td><a href='<spring:url value="/perguntas/${pergunta.id}.html"></spring:url>'>${pergunta.id}</a></td>
-									<td>${pergunta.pergunta}</td>
-											
-								</tr>
-								<tr>
-									<c:forEach items="${pergunta.respostas}" var="resposta">
-										<tr>
-											<td>${pergunta.id}${resposta.id}</td>
-											<td>${resposta.texto}</td>
-										</tr>
-									</c:forEach>
-								</tr>
-							</c:forEach>
-						</tbody>
-			</table>
-		</div>
-        <!-- /.col -->
-      </div>
-      <!-- /.row -->
-      
-      
-      
-      
+            
 
       <!-- Table row -->
       <div class="row">
@@ -169,11 +128,13 @@
             </tr>
             </thead>
             <tbody>
+            <c:forEach items="${respostas}" var="resposta">
             <tr>
-              <td>${avaliacao.perguntas[0].respostas[0].id}</td>
-              <td>${avaliacao.perguntas[0].respostas[0].texto}</td>
+              <td>${resposta.id}</td>
+              <td>${resposta.texto}</td>
               
             </tr>
+            </c:forEach>
             </tbody>
           </table>
         </div>

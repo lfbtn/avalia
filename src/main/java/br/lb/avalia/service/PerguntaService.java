@@ -8,6 +8,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import br.lb.avalia.entity.Avaliacao;
 import br.lb.avalia.entity.Pergunta;
 import br.lb.avalia.repository.PerguntaRepository;
 
@@ -26,5 +27,9 @@ public class PerguntaService {
 	
 	public List<Pergunta> findAll() {
 		return perguntaRepository.findAll();
+	}
+	
+	public Pergunta findOne(int id){
+		return perguntaRepository.findOne(id);
 	}
 }

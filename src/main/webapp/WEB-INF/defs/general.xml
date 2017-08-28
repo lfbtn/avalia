@@ -154,11 +154,98 @@
 		</put-list-attribute>
 	</definition>
 	
+	<definition name="avaliacao-register" extends="common">
+		<put-attribute name="title" value="Register" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/avalia/avaliacao-register.jsp" />
+		<put-attribute name="current" value="avaliacao-register" />
+		<put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+		<put-list-attribute name="stylesheets" inherit="true">
+			<add-attribute
+				value="/resources/plugins/datatables/dataTables.bootstrap.css" />
+		</put-list-attribute>
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute
+				value="/resources/plugins/datatables/jquery.dataTables.min.js" />
+			<add-attribute
+				value="/resources/plugins/datatables/dataTables.bootstrap.min.js" />
+			<add-attribute
+				value="/resources/plugins/slimScroll/jquery.slimscroll.min.js" />
+			<add-attribute value="/resources/plugins/fastclick/fastclick.min.js" />
+			<add-attribute value="/resources/js/users.js" />
+		</put-list-attribute>
+	</definition>
+	
 	<definition name="perguntas" extends="common">
 		<put-attribute name="title" value="Users" />
 		<put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
 		<put-attribute name="body" value="/WEB-INF/jsp/avalia/perguntas.jsp" />
 		<put-attribute name="current" value="perguntas" />
+		<put-list-attribute name="stylesheets" inherit="true">
+			<add-attribute
+				value="/resources/plugins/datatables/dataTables.bootstrap.css" />
+		</put-list-attribute>
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute
+				value="/resources/plugins/datatables/jquery.dataTables.min.js" />
+			<add-attribute
+				value="/resources/plugins/datatables/dataTables.bootstrap.min.js" />
+			<add-attribute
+				value="/resources/plugins/slimScroll/jquery.slimscroll.min.js" />
+			<add-attribute value="/resources/plugins/fastclick/fastclick.min.js" />
+			<add-attribute value="/resources/js/users.js" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="perguntas-register" extends="common">
+		<put-attribute name="title" value="Register" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/avalia/perguntas-register.jsp" />
+		<put-attribute name="current" value="perguntas-register" />
+		<put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+		<put-list-attribute name="stylesheets" inherit="true">
+			<add-attribute
+				value="/resources/plugins/datatables/dataTables.bootstrap.css" />
+		</put-list-attribute>
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute
+				value="/resources/plugins/datatables/jquery.dataTables.min.js" />
+			<add-attribute
+				value="/resources/plugins/datatables/dataTables.bootstrap.min.js" />
+			<add-attribute
+				value="/resources/plugins/slimScroll/jquery.slimscroll.min.js" />
+			<add-attribute value="/resources/plugins/fastclick/fastclick.min.js" />
+			<add-attribute value="/resources/js/users.js" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="respostas" extends="common">
+		<put-attribute name="title" value="Respostas" />
+		<put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+		<put-attribute name="body" value="/WEB-INF/jsp/avalia/respostas.jsp" />
+		<put-attribute name="current" value="respostas" />
+		<put-list-attribute name="stylesheets" inherit="true">
+			<add-attribute
+				value="/resources/plugins/datatables/dataTables.bootstrap.css" />
+		</put-list-attribute>
+		<put-list-attribute name="javascripts" inherit="true">
+			<add-attribute
+				value="/resources/plugins/datatables/jquery.dataTables.min.js" />
+			<add-attribute
+				value="/resources/plugins/datatables/dataTables.bootstrap.min.js" />
+			<add-attribute
+				value="/resources/plugins/slimScroll/jquery.slimscroll.min.js" />
+			<add-attribute value="/resources/plugins/fastclick/fastclick.min.js" />
+			<add-attribute value="/resources/js/users.js" />
+		</put-list-attribute>
+	</definition>
+	
+	<definition name="resposta-register" extends="common">
+		<put-attribute name="title" value="Register" />
+		<put-attribute name="body"
+			value="/WEB-INF/jsp/avalia/resposta-register.jsp" />
+		<put-attribute name="current" value="resposta-register" />
+		<put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
 		<put-list-attribute name="stylesheets" inherit="true">
 			<add-attribute
 				value="/resources/plugins/datatables/dataTables.bootstrap.css" />

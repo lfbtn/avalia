@@ -8,6 +8,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import br.lb.avalia.entity.Avaliacao;
 import br.lb.avalia.entity.Resposta;
 import br.lb.avalia.repository.RespostaRepository;
 
@@ -26,6 +27,10 @@ public class RespostaService {
 	
 	public List<Resposta> findAll() {
 		return respostaRepository.findAll();
+	}
+	
+	public Resposta findOne(int id){
+		return respostaRepository.findOne(id);
 	}
 }
 
