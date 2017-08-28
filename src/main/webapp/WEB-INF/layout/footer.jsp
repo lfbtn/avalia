@@ -6,7 +6,7 @@
 <footer class="main-footer">
         <!-- To the right -->
         <div class="pull-right hidden-xs">
-        	JSI - Real Jurídica.
+        	Avalia.
         </div>
         <!-- Default to the left -->
         <%-- <strong>Copyright &copy; <fmt:formatDate pattern="yyyy" value="${now}" /> <a href="#">JSI</a>.</strong> All rights reserved.
