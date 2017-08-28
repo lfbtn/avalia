@@ -66,18 +66,6 @@ $( "#autocomplete" ).autocomplete({
 				</ul>
 			</li>
 			
-			<li class="treeview">
-				<a href="#"> 
-					<i class="fa fa-newspaper-o"></i>
-					<span>Noticias</span> <i class="fa fa-angle-left pull-right"></i>
-				</a>
-				<ul class="treeview-menu">
-					<li>
-						<a href='<spring:url value="/noticias.html"></spring:url>'>
-						<i class="glyphicon glyphicon-list-alt"></i>Noticias</a>
-					</li>
-				</ul>
-			</li>
 			
 			<li class="treeview">
 				<a href="#"> 
